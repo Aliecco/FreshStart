@@ -12,7 +12,7 @@ public class Car {
     private String model;
     private int series;
 
-    @OneToOne
+    @OneToOne(mappedBy = "cars")
     private User user;
 
     public Car() {
